@@ -1,0 +1,114 @@
+/*
+    This is the css file for "Movie Reviews". It sets up the theme
+		of the page by font, color, and spacing to maintain consistency.
+		It sets the style for the add review, list of reviews,
+		and each individual review box.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+
+body {
+	box-shadow: 0px 2px 12px 0px black;
+	font-family: "Karla", sans-serif;
+}
+
+body, #reviews {
+	width: 70%;
+	text-align: center;
+	margin: auto;
+}
+
+header {
+	background-color: orange;
+	border-bottom: 2px solid;
+}
+
+main {
+	background-color: yellow;
+}
+
+h1 {
+	font-family: "Rubik", sans-serif;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h1, h2, h3 {
+	padding: 20px;
+}
+
+p {
+	margin: 8px;
+}
+
+blockquote, h1, h2, h3 {
+	margin: 0;
+}
+
+#reviews {
+	margin-top: 0;
+}
+
+#add-review, .review {
+	background-color: #c3c3a1;
+}
+
+#reviews-box {
+	border: 2px solid black;
+	min-height: 200px;
+}
+
+.info > p {
+	text-align: left;
+	padding-right: 40px;
+}
+
+.info {
+	padding-left: 20px;
+	margin-right: 20px;
+}
+
+.movie-title {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.score {
+	font-size: 80px;
+	color: green;
+	text-align: right;
+	padding-right: 20px;
+	text-shadow: 0px 0px 8px rgba(0, 128, 0, 0.58);
+    align-items: center;
+}
+
+.score, .review, #content {
+	display: flex;
+}
+
+.review {
+	min-height: 100px;
+	border: 2px solid black;
+	border-radius: 0.35em;
+	box-shadow: 2px 2px black;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input, textarea, button {
+	margin: 10px 20px;
+	display: block;
+	width: 75%;
+}
+
+textarea {
+	resize: vertical;
+}

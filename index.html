@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<!--
+     This is the html file for "Movie Reviews".
+     The content includes a list of movie reviews from a reviews database.
+     Also includes textboxes to add a review.
+-->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Movie Reviews</h1>
+    </header>
+
+    <main>
+      <section id="content">
+        <div id="add-review">
+          <h3>Add Review</h3>
+          <input type="text" id="reviewer-input" placeholder="Your Name">
+          <input type="text" id="title-input" placeholder="Movie Title">
+          <input type="number" id="release-input" placeholder="Movie Release Year"
+           min="1900" max="2018">
+          <input type="number" id="score-input" placeholder="Score out of 100" min="0" max="100">
+          <textarea rows="4" cols="20" id="comments-input" placeholder="Comments"></textarea>
+          <button id="submit">Submit</button>
+        </div>
+
+        <div id="reviews"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created by Kyle Roland</p>
+    </footer>
+  </body>
+</html>
